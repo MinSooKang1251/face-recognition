@@ -7,7 +7,7 @@ detector = dlib.get_frontal_face_detector()
 #d아래의 shape머시기는 머신러닝으로 학습된 파일임. 구글링해서 다운 받았음.
 predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 #캡 함수로 비디오 링크를 넣는다.
-cap = cv2.VideoCapture('girl.mp4')
+cap = cv2.VideoCapture('samples/girl.mp4')
 
 while True:
     ret, img = cap.read()

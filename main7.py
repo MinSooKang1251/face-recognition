@@ -1,7 +1,7 @@
 import cv2, dlib, sys
 import numpy as np
 #스케일러를 통해 비디오 크기를 줄여준다.
-scaler = 0.4
+scaler = 0.2
 
 detector = dlib.get_frontal_face_detector()
 #d아래의 shape머시기는 머신러닝으로 학습된 파일임. 구글링해서 다운 받았음.
@@ -10,7 +10,7 @@ predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 cap = cv2.VideoCapture('samples/girl.mp4')
 
 #load overlay image
-overlay = cv2.imread('samples/peach.png', cv2.IMREAD_UNCHANGED)
+overlay = cv2.imread('samples/peach3.png', cv2.IMREAD_UNCHANGED)
 
 # overlay function 이미지를 입히는 이 함수는 어려움. 소스코드 구글링해서 따옴
 def overlay_transparent(background_img, img_to_overlay_t, x, y, overlay_size=None):
@@ -62,7 +62,7 @@ while True:
     bottom_right = np.max(shape_2d, axis=0)
     
     #크기가 작으면 뒤에 * 1.8 등 숫자를 곱해서 키울 수있다. 소수점 있는 것을 곱하기 때문에 max앞에 int 사용
-    face_size = int(max(bottom_right - top_left) * 1.3)  
+    face_size = int(max(bottom_right - top_left) * 1.2)  
 
     #얼굴의 중심을 구할 것이다. 모든 특징점의 평균을 구해 중심을 구한다.
     #평균이 소수점일 수 있어서 int로 설정한다.
@@ -86,7 +86,7 @@ while True:
     cv2.circle(img, center=tuple((center_x, center_y)), radius=1, color=(0,0,255), thickness=2, lineType=cv2.LINE_AA)
     
     #Imshow함수로 화면 출력. 앞에는 출력 타이틀 이름 뒤에는 imread의 리턴 값
-    cv2.imshow('img', img)
+    cv2.imshow('video', img)
     #위에 overlay함수를 리절트에 저장했고 그 저장한 리절트를 보여준다.
     cv2.imshow('result', result)
     cv2.waitKey(1)

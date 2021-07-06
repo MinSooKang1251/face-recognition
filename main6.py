@@ -7,10 +7,10 @@ detector = dlib.get_frontal_face_detector()
 #d아래의 shape머시기는 머신러닝으로 학습된 파일임. 구글링해서 다운 받았음.
 predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 #캡 함수로 비디오 링크를 넣는다.
-cap = cv2.VideoCapture('girl2.mp4')
+cap = cv2.VideoCapture('samples/girl2.mp4')
 
 #load overlay image
-overlay = cv2.imread('peach.png', cv2.IMREAD_UNCHANGED)
+overlay = cv2.imread('samples/peach.png', cv2.IMREAD_UNCHANGED)
 
 # overlay function 이미지를 입히는 이 함수는 어려움. 소스코드 구글링해서 따옴
 def overlay_transparent(background_img, img_to_overlay_t, x, y, overlay_size=None):
