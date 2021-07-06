@@ -11,10 +11,26 @@
  정확하게 내가 이해한 바가 맞는지 햇갈리는 단계를 거쳐 결과물이라 할 수 있는 수준의 값을 얻었다.
  
  # 사용 라이브러리
- open-cv와 numpy 그리고 dlib를 사용하였다.
+ - open-cv 
+ - numpy 
+ - dlib
  
  # oepn-cv
  이미지 처리를 위한 Open-cv
+ 
+- Open Source Computer Vision 의 약자
+
+- 실시간 이미지/영상 처리에 사용하는 오픈 소스 라이브러리 
+
+- Python, C++, Java 와 같은 다양한 개발 환경을 지원
+
+- Windows, Linux, Mac OS, iOS 및 Android같은 다양한 OS를 지원하는 크로스 플랫폼
+
+OpenCV에서 이미지를 읽기 위해서는 imread() 함수를 사용하고, 이미지를 저장하기 위해서는 imwrite() 함수를 사용한다. 또한, 이미지를 화면에 표시하기 위해서는 imshow() 함수를 사용하는데, 이 함수를 사용하면 OpenCV가 새 윈도우 창을 만들고 해당 이미지를 보여준다. 아래 예제는 한 이미지 파일을 읽어 들여 이를 화면에 출력한 후, 다른 파일명으로 이미지를 저장하는 코드이다.
+
+
+
+출처: https://devuna.tistory.com/40 [튜나 개발일기]
  
  # mumpy
  행열 연산 라이브러리 numpy
