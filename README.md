@@ -8,7 +8,10 @@
  1. 얼굴 인식
  2. 결과 영상에 이모티콘 등 준비한 이미지 입히기
  
- 
+ ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/78295968/124685882-1718c400-df0d-11eb-9efc-c75b34439608.gif)
+내 영상을 사용하여 프로그램을 만들었다.
+
+
  
  ## 사용 라이브러리
  - open-cv 
