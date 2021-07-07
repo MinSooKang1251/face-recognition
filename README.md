@@ -4,6 +4,9 @@
  
  # 파이썬 AI 얼굴 인식, 이모티콘 합성 기능
  
+ <img width="439" alt="111" src="https://user-images.githubusercontent.com/78295968/124686441-1b91ac80-df0e-11eb-896c-51ccf5c27a98.png">
+
+ 
  - 주요 기능
  1. 얼굴 인식
  2. 결과 영상에 이모티콘 등 준비한 이미지 입히기
