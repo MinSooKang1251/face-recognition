@@ -1,5 +1,6 @@
 import cv2, dlib, sys
 import numpy as np
+import cv2 as cv
 #스케일러를 통해 비디오 크기를 줄여준다.
 scaler = 0.4
 
@@ -89,4 +90,12 @@ while True:
     cv2.imshow('img', img)
     #위에 overlay함수를 리절트에 저장했고 그 저장한 리절트를 보여준다.
     cv2.imshow('result', result)
+  
+    key = cv.waitKey(1)
+
+#ESC키를 누르면 프로그램을 종료한다.
+    if key == 27:
+        break
     cv2.waitKey(1)
+      
+  
