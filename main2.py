@@ -1,5 +1,6 @@
 import cv2, dlib, sys
 import numpy as np
+import cv2 as cv
 #스케일러를 통해 비디오 크기를 줄여준다.
 scaler = 0.3
 
@@ -28,4 +29,11 @@ while True:
    
     #Imshow함수로 화면 출력. 앞에는 출력 타이틀 이름 뒤에는 imread의 리턴 값
     cv2.imshow('img', img)
+    cv2.waitKey(1)
+
+     key = cv.waitKey(1)
+
+#ESC키를 누르면 프로그램을 종료한다.
+    if key == 27:
+        break
     cv2.waitKey(1)
