@@ -90,9 +90,9 @@ while True:
     cv2.imshow('video', img)
     #위에 overlay함수를 리절트에 저장했고 그 저장한 리절트를 보여준다.
     cv2.imshow('result', result)
-    cv2.waitKey(1)
+    
 
-     key = cv.waitKey(1)
+    key = cv.waitKey(1)
 
 #ESC키를 누르면 프로그램을 종료한다.
     if key == 27:
